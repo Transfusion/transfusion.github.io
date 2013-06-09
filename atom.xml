@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Transfusion's fiddlings.]]></title>
+  <link href="http://Transfusion.github.io/atom.xml" rel="self"/>
+  <link href="http://Transfusion.github.io/"/>
+  <updated>2013-06-09T11:22:53+04:00</updated>
+  <id>http://Transfusion.github.io/</id>
+  <author>
+    <name><![CDATA[Transfusion]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[It seems like Transfusion likes static blogging now.]]></title>
+    <link href="http://Transfusion.github.io/blog/2013/06/09/it-seems-like-transfusion-likes-static-blogging-now/"/>
+    <updated>2013-06-09T02:45:00+04:00</updated>
+    <id>http://Transfusion.github.io/blog/2013/06/09/it-seems-like-transfusion-likes-static-blogging-now</id>
+    <content type="html"><![CDATA[<p>&lsquo;&rsquo;&lsquo;python -c &ldquo;print &rsquo;&lsquo;.join(<strong>import</strong>(&#8216;random&rsquo;).choice(u&#8217;\u2571\u2572&#8217;) for i in range(50*24))&rdquo;&lsquo;&rsquo;&#8217;</p>
+]]></content>
+  </entry>
+  
+</feed>
