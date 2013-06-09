@@ -5,7 +5,7 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Transfusion's fiddlings.</title>
+  <title>Getting VT-x and Olarila working on an MSI GE620 - Transfusion's fiddlings.</title>
   <meta name="author" content="Transfusion">
 
   
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://transfusion.github.io/">
+  <link rel="canonical" href="http://transfusion.github.io/blog/2013/06/09/getting-vt-x-and-olarila-working-on-an-msi-ge620/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
    <link href="/stylesheets/data-table.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -67,15 +67,12 @@
 </nav> -->
   <div id="main">
     <div id="content">
-      <div class="blog-index">
+      <div>
+<article class="hentry" role="article">
   
-  
-  
-    <article>
-      
   <header>
     
-      <h1 class="entry-title"><a href="/blog/2013/06/09/getting-vt-x-and-olarila-working-on-an-msi-ge620/">Getting VT-x and Olarila Working on an MSI GE620</a></h1>
+      <h1 class="entry-title">Getting VT-x and Olarila Working on an MSI GE620</h1>
     
     
       <p class="meta">
@@ -98,7 +95,7 @@
   </header>
 
 
-  <div class="entry-content"><p>This is my first BIOS flash in a horribly long time, the last time I did I did on a really low-end GeForce 7025 chipset Foxconn M61PMV, and I flunked that one the second time by using the AMI BIOS flash through Windows. Sure as sandy didn&rsquo;t want to mess this beauty of a lappy up. The i5-2410M supports VT-x, but VirtualBox coughed up this error:
+<div class="entry-content"><p>This is my first BIOS flash in a horribly long time, the last time I did I did on a really low-end GeForce 7025 chipset Foxconn M61PMV, and I flunked that one the second time by using the AMI BIOS flash through Windows. Sure as sandy didn&rsquo;t want to mess this beauty of a lappy up. The i5-2410M supports VT-x, but VirtualBox coughed up this error:
 <img src="https://www.kaira.tk/fp-content/images/zEEkb.png" alt="VBox Error" />
 <img src="https://www.kaira.tk/fp-content/images/14mgl6f.png" alt="VM Settings" />
 <a href="http://forum-en.msi.com/index.php?topic=147711.0">http://forum-en.msi.com/index.php?topic=147711.0</a>
@@ -120,22 +117,16 @@ EIEIO.
 After I finished, I restarted with the DVD, this time pressing F8 to toggle advanced boot options and using GraphicsEnabler=yes.
 Old MacDonald would be pleased. Time to install Chameleon and MultiBeast.</p>
 </div>
-  
-  
 
 
-    </article>
-  
-  
-    <article>
+  <footer>
+    <p class="meta">
       
-  <header>
-    
-      <h1 class="entry-title"><a href="/blog/2013/06/09/it-seems-like-transfusion-likes-static-blogging-now/">It Seems Like Transfusion Likes Static Blogging Now.</a></h1>
-    
-    
-      <p class="meta">
-        
+  
+
+<span class="byline author vcard">Posted by <span class="fn">Transfusion</span></span>
+
+      
 
 
 
@@ -147,27 +138,53 @@ Old MacDonald would be pleased. Time to install Chameleon and MultiBeast.</p>
   
 
 
-<time datetime="2013-06-09T02:45:00+04:00" pubdate data-updated="true">Jun 9<span>th</span>, 2013</time>
-        
-      </p>
+<time datetime="2013-06-09T21:09:00+04:00" pubdate data-updated="true">Jun 9<span>th</span>, 2013</time>
+      
+
+
+    </p>
     
-  </header>
-
-
-  <div class="entry-content"><p><code>python -c "print ''.join(__import__('random').choice(u'\u2571\u2572') for i in range(50*24))"</code></p>
+      <div class="sharing">
+  
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://transfusion.github.io/blog/2013/06/09/getting-vt-x-and-olarila-working-on-an-msi-ge620/" data-via="" data-counturl="http://transfusion.github.io/blog/2013/06/09/getting-vt-x-and-olarila-working-on-an-msi-ge620/" >Tweet</a>
+  
+  
+  
 </div>
-  
-  
+
+    
+    <p class="meta">
+      
+        <a class="basic-alignment left" href="/blog/2013/06/09/it-seems-like-transfusion-likes-static-blogging-now/" title="Previous Post: It seems like Transfusion likes static blogging now.">&laquo; It seems like Transfusion likes static blogging now.</a>
+      
+      
+    </p>
+  </footer>
+</article>
 
 
-    </article>
-  
-  <div class="pagination">
-    
-    <a href="archives">Blog Archives</a>
-    
-  </div>
-</div>
+  <section>
+    <h1>Comments</h1>
+	<script src="http://zor.livefyre.com/wjs/v3.0/javascripts/livefyre.js"></script>
+	<div id="livefyre-app-http://transfusion.github.io/"></div>
+	<!-- Scripts -->
+	<script>
+	(function() {
+	    fyre.conv.load({
+	        network: 'livefyre.com'
+	    }, [{
+	        siteId: '335511',
+	        articleId: 'http://transfusion.github.io/',
+        	el: 'livefyre-app-http://transfusion.github.io/',
+	    }], function (widget) {
+        	// Initialize or Auth
+	    });
+	}());
+	</script>
+	</div>
+  </section>
+
+
 <aside class="sidebar">
   
     <section>
@@ -209,6 +226,7 @@ Old MacDonald would be pleased. Time to install Chameleon and MultiBeast.</p>
 
   
 </aside>
+
 
     </div>
   </div>
