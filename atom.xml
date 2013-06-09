@@ -2,10 +2,10 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
 
   <title><![CDATA[Transfusion's fiddlings.]]></title>
-  <link href="http://Transfusion.github.io/atom.xml" rel="self"/>
-  <link href="http://Transfusion.github.io/"/>
-  <updated>2013-06-09T16:31:56+04:00</updated>
-  <id>http://Transfusion.github.io/</id>
+  <link href="http://transfusion.github.io/atom.xml" rel="self"/>
+  <link href="http://transfusion.github.io/"/>
+  <updated>2013-06-09T16:44:24+04:00</updated>
+  <id>http://transfusion.github.io/</id>
   <author>
     <name><![CDATA[Transfusion]]></name>
     
@@ -15,9 +15,9 @@
   
   <entry>
     <title type="html"><![CDATA[It seems like Transfusion likes static blogging now.]]></title>
-    <link href="http://Transfusion.github.io/blog/2013/06/09/it-seems-like-transfusion-likes-static-blogging-now/"/>
+    <link href="http://transfusion.github.io/blog/2013/06/09/it-seems-like-transfusion-likes-static-blogging-now/"/>
     <updated>2013-06-09T02:45:00+04:00</updated>
-    <id>http://Transfusion.github.io/blog/2013/06/09/it-seems-like-transfusion-likes-static-blogging-now</id>
+    <id>http://transfusion.github.io/blog/2013/06/09/it-seems-like-transfusion-likes-static-blogging-now</id>
     <content type="html"><![CDATA[<p><code>python -c "print ''.join(__import__('random').choice(u'\u2571\u2572') for i in range(50*24))"</code></p>
 ]]></content>
   </entry>
