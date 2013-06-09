@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Transfusion's fiddlings.]]></title>
-  <link href="http://transfusion.github.io/atom.xml" rel="self"/>
+  <title><![CDATA[Category: Programming | Transfusion's fiddlings.]]></title>
+  <link href="http://transfusion.github.io/blog/categories/programming/atom.xml" rel="self"/>
   <link href="http://transfusion.github.io/"/>
   <updated>2013-06-09T20:06:13+04:00</updated>
   <id>http://transfusion.github.io/</id>
