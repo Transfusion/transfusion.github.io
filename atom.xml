@@ -4,7 +4,7 @@
   <title><![CDATA[Transfusion's fiddlings.]]></title>
   <link href="http://transfusion.github.io/atom.xml" rel="self"/>
   <link href="http://transfusion.github.io/"/>
-  <updated>2013-06-10T08:46:44+04:00</updated>
+  <updated>2013-06-10T19:06:04+04:00</updated>
   <id>http://transfusion.github.io/</id>
   <author>
     <name><![CDATA[Transfusion]]></name>
@@ -20,8 +20,14 @@
     <id>http://transfusion.github.io/blog/2013/06/09/getting-vt-x-and-olarila-working-on-an-msi-ge620</id>
     <content type="html"><![CDATA[<p>This is my first BIOS flash in a horribly long time, the last time I did I did on a really low-end GeForce 7025 chipset Foxconn M61PMV, and I flunked that one the second time by using the AMI BIOS flash through Windows. Sure as sandy didn&rsquo;t want to mess this beauty of a lappy up. The i5-2410M supports VT-x, but VirtualBox coughed up this error:</p>
 
-<p><img src="http://www.kaira.tk/fp-content/images/zEEkb.png" width="237" height="178" title="[VBox Error]" >
-<img src="http://www.kaira.tk/fp-content/images/14mgl6f.png" width="300" height="198" title="[VM Settings]" ></p>
+<p><a href="#" data-reveal-id="image-link-modal"><img src="http://i41.tinypic.com/2v7vrza.png"/ alt="Cow. Photo credits to publicenergy"></a></p>
+
+<div id="image-link-modal" class="reveal-modal">
+  <img src="http://www.kaira.tk/fp-content/images/zEEkb.png" alt="VBox Error"/>
+</div>
+
+
+<p><img src="http://www.kaira.tk/fp-content/images/14mgl6f.png" width="300" height="198" title="[VM Settings]" ></p>
 
 <p><a href="http://forum-en.msi.com/index.php?topic=147711.0">GE620 VT BIOS support?</a>
 <a href="http://forum-en.msi.com/index.php?topic=150203.0">Ask for custom bios of MSI GE 620</a></p>
