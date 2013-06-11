@@ -4,7 +4,7 @@
   <title><![CDATA[Transfusion's fiddlings.]]></title>
   <link href="http://transfusion.github.io/atom.xml" rel="self"/>
   <link href="http://transfusion.github.io/"/>
-  <updated>2013-06-11T12:11:42+04:00</updated>
+  <updated>2013-06-11T12:23:42+04:00</updated>
   <id>http://transfusion.github.io/</id>
   <author>
     <name><![CDATA[Transfusion]]></name>
@@ -116,7 +116,7 @@
     <link href="http://transfusion.github.io/blog/2013/06/09/it-seems-like-transfusion-likes-static-blogging-now/"/>
     <updated>2013-06-09T02:45:00+04:00</updated>
     <id>http://transfusion.github.io/blog/2013/06/09/it-seems-like-transfusion-likes-static-blogging-now</id>
-    <content type="html"><![CDATA[<p><code>python -c "print ''.join(__import__('random').choice(u'\u2571\u2572') for i in range(50*24))"</code></p>
+    <content type="html"><![CDATA[<p><code>print ''.join(__import__('random').choice(u'\u2571\u2572') for i in range(50*24))</code></p>
 ]]></content>
   </entry>
   
