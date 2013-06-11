@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Technology | Transfusion's fiddlings.]]></title>
   <link href="http://transfusion.github.io/blog/categories/technology/atom.xml" rel="self"/>
   <link href="http://transfusion.github.io/"/>
-  <updated>2013-06-11T14:03:10+04:00</updated>
+  <updated>2013-06-11T14:05:18+04:00</updated>
   <id>http://transfusion.github.io/</id>
   <author>
     <name><![CDATA[Transfusion]]></name>
@@ -84,7 +84,7 @@ to generate the certificate and key needed for the SSL connection.</p>
 cp -r /var/mobile/Unreal3.2.10.1/src/ ../UnrealIRCD-build/
 cp /var/mobile/UnrealIRCD-build/src/example.conf /var/mobile/UnrealIRCD-build/unrealircd.conf
 </code>
-Edit the confif file as you wish!&hellip;</p>
+Edit the config file as you wish!&hellip;</p>
 ]]></content>
   </entry>
   
