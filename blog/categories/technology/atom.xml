@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Technology | Transfusion's fiddlings.]]></title>
   <link href="http://transfusion.github.io/blog/categories/technology/atom.xml" rel="self"/>
   <link href="http://transfusion.github.io/"/>
-  <updated>2013-06-11T09:58:02+04:00</updated>
+  <updated>2013-06-11T10:03:12+04:00</updated>
   <id>http://transfusion.github.io/</id>
   <author>
     <name><![CDATA[Transfusion]]></name>
@@ -32,9 +32,9 @@
 <!-- more -->
 
 
-<p><a href="#" data-reveal-id="image-link-modal"><img src="http://i43.tinypic.com/adf6v6.png"/ alt="VM Settings."></a></p>
+<p><a href="#" data-reveal-id="image-link-modal1"><img src="http://i43.tinypic.com/adf6v6.png"/ alt="VM Settings."></a></p>
 
-<div id="image-link-modal" class="reveal-modal">
+<div id="image-link-modal1" class="reveal-modal">
   <img src="http://www.kaira.tk/fp-content/images/14mgl6f.png" alt="VM Settings"/>
 </div>
 
@@ -44,9 +44,9 @@
 
 <p>These turned up; so time for me to flash the latest BIOS from here! <em>shiver</em> hefty brick <em>shiver</em> because mine is dated at 2011. Downloading the flashing tool:</p>
 
-<p><a href="#" data-reveal-id="image-link-modal"><img src="http://i41.tinypic.com/3499mpv.png"/ alt="MSI HQUT."></a></p>
+<p><a href="#" data-reveal-id="image-link-modal2"><img src="http://i41.tinypic.com/3499mpv.png"/ alt="MSI HQUT."></a></p>
 
-<div id="image-link-modal" class="reveal-modal">
+<div id="image-link-modal2" class="reveal-modal">
   <img src="http://www.kaira.tk/fp-content/images/14kwo4h.png" alt="MSI HQUT"/>
 </div>
 
