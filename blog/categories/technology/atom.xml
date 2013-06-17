@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Technology | Transfusion's fiddlings.]]></title>
   <link href="http://transfusion.github.io/blog/categories/technology/atom.xml" rel="self"/>
   <link href="http://transfusion.github.io/"/>
-  <updated>2013-06-17T21:19:18+04:00</updated>
+  <updated>2013-06-17T21:37:07+04:00</updated>
   <id>http://transfusion.github.io/</id>
   <author>
     <name><![CDATA[Transfusion]]></name>
@@ -12,6 +12,44 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[GNU Screen on Acme]]></title>
+    <link href="http://transfusion.github.io/blog/2013/06/17/gnu-screen-on-steroids/"/>
+    <updated>2013-06-17T17:25:00+04:00</updated>
+    <id>http://transfusion.github.io/blog/2013/06/17/gnu-screen-on-steroids</id>
+    <content type="html"><![CDATA[<p><a href="#" data-reveal-id="screenrc"><img src="http://oi42.tinypic.com/30ark79.jpg"/ alt="screenrc""></a></p>
+
+<div id="screenrc" class="reveal-modal">
+  <img src="http://oi39.tinypic.com/eplyrn.jpg" alt="screen with panes and automatic window title changing""></a>
+</div>
+
+
+
+
+<!-- more -->
+
+
+<p>Append this to your ~/.bashrc:
+```
+case &ldquo;$TERM&rdquo; in</p>
+
+<pre><code>screen*) PROMPT_COMMAND='echo -ne "\033k\033\0134"'
+</code></pre>
+
+<p>esac
+<code>
+and this to your .screenrc:
+</code>
+hardstatus alwayslastline &lsquo;%{= G}[ %{G}%H %{g}][%= %{= w}%?%-Lw%?%{= R}%n*%f %t%?%{= R}(%u)%?%{= w}%+Lw%?%= %{= g}][ %{y}Load: %l %{g}][%{B}%Y-%m-%d %{W}%c:%s %{g}]&rsquo;
+shelltitle &lsquo;$ |bash&rsquo;
+```
+Courtesy of
+<a href="http://superuser.com/questions/244299/gnu-screen-how-to-update-dynamically-the-title-of-a-window">Gnu screen, how to update dynamically the title of a window?</a>
+and
+<a href="http://beerpla.net/2009/10/06/supercharge-your-gnu-screen-with-a-power-taskbar-and-never-feel-lost-again/">Supercharge Your GNU Screen With A Power &ldquo;Taskbar&rdquo; And Never Feel Lost Again</a></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Compiling UnrealIRCD on an iPod touch 2G]]></title>
