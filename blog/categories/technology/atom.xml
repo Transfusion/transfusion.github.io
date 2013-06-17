@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Technology | Transfusion's fiddlings.]]></title>
   <link href="http://transfusion.github.io/blog/categories/technology/atom.xml" rel="self"/>
   <link href="http://transfusion.github.io/"/>
-  <updated>2013-06-17T22:13:38+04:00</updated>
+  <updated>2013-06-17T22:15:55+04:00</updated>
   <id>http://transfusion.github.io/</id>
   <author>
     <name><![CDATA[Transfusion]]></name>
@@ -51,7 +51,9 @@ and
 
 <p>If you want to keep your splits/panes persistent even when you detach:</p>
 
-<p><blockquote><p>The short is answer is that you can&rsquo;t. The longer answer is that you can fake it. (Note: the next screen release, probably numbered 4.1.0, will be able to remember display layouts.)</p></p><p><p>Splits are a property of your display. The process managing your screen session doesn&rsquo;t really know about them; only the single process that&rsquo;s displaying the session does. Thus, the screen session can&rsquo;t remember the splits because it doesn&rsquo;t know about them, and once you detach, the process that did know about them has exited.</p></p><p><p>The hack is to use nested screen sessions. Start one session and give it some escape sequence that you won&rsquo;t use much (or just disable its escape character completely). Bind your usual detach key sequence to this screen session. Now, start or attach to your main screen session. All of your work will be done in the inner session, and you can split your display. When you detach, however, it will be the outer session that detaches, so your splits in the inner session will be preserved.</p><footer><strong>,<a href="http://aperiodic.net/screen/faq#when_i_split_the_display_and_then_detach_screen_forgets_the_split">http://aperiodic.net/screen/faq#when_i_split_the_display_and_then_detach_screen_forgets_the_split</a></strong></footer></blockquote></p>
+<p><blockquote><p>The short is answer is that you can&rsquo;t. The longer answer is that you can fake it. (Note: the next screen release, probably numbered 4.1.0, will be able to remember display layouts.)</p></p><p><p>Splits are a property of your display. The process managing your screen session doesn&rsquo;t really know about them; only the single process that&rsquo;s displaying the session does. Thus, the screen session can&rsquo;t remember the splits because it doesn&rsquo;t know about them, and once you detach, the process that did know about them has exited.</p></p><p><p>The hack is to use nested screen sessions. Start one session and give it some escape sequence that you won&rsquo;t use much (or just disable its escape character completely). Bind your usual detach key sequence to this screen session. Now, start or attach to your main screen session. All of your work will be done in the inner session, and you can split your display. When you detach, however, it will be the outer session that detaches, so your splits in the inner session will be preserved.</p></blockquote></p>
+
+<p><a href="http://aperiodic.net/screen/faq#when_i_split_the_display_and_then_detach_screen_forgets_the_split">GNU screen [faq]</a></p>
 ]]></content>
   </entry>
   
