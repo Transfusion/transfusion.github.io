@@ -5,12 +5,12 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Compiling UnrealIRCD on an iPod touch 2G - Transfusion's fiddlings.</title>
+  <title>GNU Screen on Acme - Transfusion's fiddlings.</title>
   <meta name="author" content="Transfusion">
 
   
-  <meta name="description" content="A picture to prove success just so you&rsquo;ll read on )) Prerequisites openssl (I have version 0.9.8k-9 from Cydia)
-iphone-gcc (follow this guide: &hellip;">
+  <meta name="description" content="
+">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -19,7 +19,7 @@ iphone-gcc (follow this guide: &hellip;">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://transfusion.github.io/blog/2013/06/11/compiling-unrealircd-on-an-ipod-touch-2g/">
+  <link rel="canonical" href="http://transfusion.github.io/blog/2013/06/17/gnu-screen-on-steroids/">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
    <link href="/stylesheets/data-table.css" media="screen, projection" rel="stylesheet" type="text/css" />
@@ -107,7 +107,7 @@ iphone-gcc (follow this guide: &hellip;">
   
   <header>
     
-      <h1 class="entry-title">Compiling UnrealIRCD on an iPod Touch 2G</h1>
+      <h1 class="entry-title">GNU Screen on Acme</h1>
     
     
       <p class="meta">
@@ -123,92 +123,14 @@ iphone-gcc (follow this guide: &hellip;">
   
 
 
-<time datetime="2013-06-11T12:49:00+04:00" pubdate data-updated="true">Jun 11<span>th</span>, 2013</time>
+<time datetime="2013-06-17T17:25:00+04:00" pubdate data-updated="true">Jun 17<span>th</span>, 2013</time>
         
       </p>
     
   </header>
 
 
-<div class="entry-content"><p>A picture to prove success just so you&rsquo;ll read on ))</p>
-
-<p><a href="#" data-reveal-id="image-link"><img src="http://i41.tinypic.com/2013k6.png"/ alt="UnrealIRCD in MobileTerminal on iPod Touch 4.2.1"></a></p>
-
-<div id="image-link" class="reveal-modal">
-  <img src="http://oi43.tinypic.com/f0zupg.jpg" alt="UnrealIRCD in MobileTerminal on iPod Touch 4.2.1"></a>
-</div>
-
-
-
-
-<!-- more -->
-
-
-<p><a href="#" data-reveal-id="image-link-modal2"><img src="http://oi43.tinypic.com/k00qwm.jpg"/ alt="uname -a"></a></p>
-
-<div id="image-link-modal2" class="reveal-modal">
-  <img src="http://oi42.tinypic.com/qp5pj5.jpg" alt="uname -a"></a>
-</div>
-
-
-<h1>Prerequisites</h1>
-
-<ul>
-<li>openssl (I have version 0.9.8k-9 from Cydia)</li>
-<li>iphone-gcc (follow this guide: <a href="http://code.google.com/p/iphone-gcc-full/">http://code.google.com/p/iphone-gcc-full/</a>)</li>
-<li>libgcc (follow this guide: <a href="http://code.google.com/p/iphone-gcc-full/">http://code.google.com/p/iphone-gcc-full/</a>)</li>
-<li>libz.dylib / zlib (If you can&rsquo;t be bothered to get this from the iPhone SDK <a href="http://cydia.radare.org/debs/">http://cydia.radare.org/debs/</a> works too)</li>
-<li>wget (who doesn&rsquo;t need wget)</li>
-</ul>
-
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>wget "http://www.unrealircd.com/downloads/Unreal3.2.10.1.tar.gz" | tar -xvzf -</span></code></pre></td></tr></table></div></figure>
-
-
-<h1>Configuring</h1>
-
-<p>For some reason I had to run the ./configure as root after cd&#8217;ing into the directory where I extracted the files as the mobile user; perhaps due to an inability to run unsigned applications?</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>checking whether we are cross compiling... configure: error: in `/var/mobile/Unreal3.2.10.1':
-</span><span class='line'>configure: error: cannot run C compiled programs.
-</span><span class='line'>If you meant to cross compile, use `--host'.</span></code></pre></td></tr></table></div></figure>
-
-
-<p>After running as root, everything went rather smoothly. Edit dpath and spath as you wish.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>./configure --with-showlistmodes --enable-ssl --enable-ziplinks --enable-inet6 --with-listen=5 --with-dpath=/var/mobile/UnrealIRCD-build --with-spath=/var/mobile/UnrealIRCD-build/src/ircd --with-nick-history=2000 --with-sendq=3000000 --with-bufferpool=18 --with-permissions=0600 --with-fd-setsize=1024 --enable-dynamic-linking</span></code></pre></td></tr></table></div></figure>
-
-
-<p>I forgot to use &lsquo;time&rsquo; but estimate it perhaps took around 20 minutes.</p>
-
-<p>After make &amp;&amp; make install:</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-<span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>openssl req -new -key server.key -out server.csr
-</span><span class='line'>openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
-</span><span class='line'>cp server.key server.key.pem
-</span><span class='line'>cp server.crt server.cert.pem</span></code></pre></td></tr></table></div></figure>
-
-
-<p>to generate the certificate and key needed for the SSL connection.</p>
-
-<p>After running ./unreal start ; it required some source modules in the build folder and the config file for the IRCD.</p>
-
-<figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
-<span class='line-number'>2</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>cp -r /var/mobile/Unreal3.2.10.1/src/ ../UnrealIRCD-build/
-</span><span class='line'>cp /var/mobile/UnrealIRCD-build/src/example.conf /var/mobile/UnrealIRCD-build/unrealircd.conf</span></code></pre></td></tr></table></div></figure>
-
-
-<p>Edit the config file as you wish!&hellip;</p>
+<div class="entry-content">
 </div>
 
 
@@ -231,21 +153,15 @@ iphone-gcc (follow this guide: &hellip;">
   
 
 
-<time datetime="2013-06-11T12:49:00+04:00" pubdate data-updated="true">Jun 11<span>th</span>, 2013</time>
+<time datetime="2013-06-17T17:25:00+04:00" pubdate data-updated="true">Jun 17<span>th</span>, 2013</time>
       
-
-<span class="categories">
-  
-    <a class='category' href='/blog/categories/technology/'>Technology</a>
-  
-</span>
 
 
     </p>
     
       <div class="sharing">
   
-  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://transfusion.github.io/blog/2013/06/11/compiling-unrealircd-on-an-ipod-touch-2g/" data-via="" data-counturl="http://transfusion.github.io/blog/2013/06/11/compiling-unrealircd-on-an-ipod-touch-2g/" >Tweet</a>
+  <a href="http://twitter.com/share" class="twitter-share-button" data-url="http://transfusion.github.io/blog/2013/06/17/gnu-screen-on-steroids/" data-via="" data-counturl="http://transfusion.github.io/blog/2013/06/17/gnu-screen-on-steroids/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -258,10 +174,8 @@ iphone-gcc (follow this guide: &hellip;">
     
     <p class="meta">
       
-        <a class="basic-alignment left" href="/blog/2013/06/09/getting-vt-x-and-olarila-working-on-an-msi-ge620/" title="Previous Post: Getting VT-x and Olarila working on an MSI GE620">&laquo; Getting VT-x and Olarila working on an MSI GE620</a>
+        <a class="basic-alignment left" href="/blog/2013/06/11/compiling-unrealircd-on-an-ipod-touch-2g/" title="Previous Post: Compiling UnrealIRCD on an iPod touch 2G">&laquo; Compiling UnrealIRCD on an iPod touch 2G</a>
       
-      
-        <a class="basic-alignment right" href="/blog/2013/06/17/gnu-screen-on-steroids/" title="Next Post: GNU Screen on Acme">GNU Screen on Acme &raquo;</a>
       
     </p>
   </footer>

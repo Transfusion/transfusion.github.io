@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Technology | Transfusion's fiddlings.]]></title>
   <link href="http://transfusion.github.io/blog/categories/technology/atom.xml" rel="self"/>
   <link href="http://transfusion.github.io/"/>
-  <updated>2013-06-11T14:06:42+04:00</updated>
+  <updated>2013-06-17T21:19:18+04:00</updated>
   <id>http://transfusion.github.io/</id>
   <author>
     <name><![CDATA[Transfusion]]></name>
@@ -20,9 +20,9 @@
     <id>http://transfusion.github.io/blog/2013/06/11/compiling-unrealircd-on-an-ipod-touch-2g</id>
     <content type="html"><![CDATA[<p>A picture to prove success just so you&rsquo;ll read on ))</p>
 
-<p><a href="#" data-reveal-id="image-link-modal"><img src="http://i41.tinypic.com/2013k6.png"/ alt="UnrealIRCD in MobileTerminal on iPod Touch 4.2.1"></a></p>
+<p><a href="#" data-reveal-id="image-link"><img src="http://i41.tinypic.com/2013k6.png"/ alt="UnrealIRCD in MobileTerminal on iPod Touch 4.2.1"></a></p>
 
-<div id="image-link-modal" class="reveal-modal">
+<div id="image-link" class="reveal-modal">
   <img src="http://oi43.tinypic.com/f0zupg.jpg" alt="UnrealIRCD in MobileTerminal on iPod Touch 4.2.1"></a>
 </div>
 
