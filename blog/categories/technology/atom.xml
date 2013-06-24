@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Technology | Transfusion's fiddlings.]]></title>
   <link href="http://transfusion.github.io/blog/categories/technology/atom.xml" rel="self"/>
   <link href="http://transfusion.github.io/"/>
-  <updated>2013-06-17T22:17:01+04:00</updated>
+  <updated>2013-06-24T13:03:58+04:00</updated>
   <id>http://transfusion.github.io/</id>
   <author>
     <name><![CDATA[Transfusion]]></name>
@@ -116,10 +116,9 @@ If you meant to cross compile, use `--host'.
 
 <p>After make &amp;&amp; make install:
 <code>
-openssl req -new -key server.key -out server.csr
-openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
+openssl genrsa -out server.key 2048
+openssl req -new -x509 -key server.key -out server.cert.pem -days 1826
 cp server.key server.key.pem
-cp server.crt server.cert.pem
 </code>
 to generate the certificate and key needed for the SSL connection.</p>
 

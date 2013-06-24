@@ -4,7 +4,7 @@
   <title><![CDATA[Transfusion's fiddlings.]]></title>
   <link href="http://transfusion.github.io/atom.xml" rel="self"/>
   <link href="http://transfusion.github.io/"/>
-  <updated>2013-06-17T22:17:01+04:00</updated>
+  <updated>2013-06-24T13:03:58+04:00</updated>
   <id>http://transfusion.github.io/</id>
   <author>
     <name><![CDATA[Transfusion]]></name>
@@ -128,11 +128,9 @@ and
 <figure class='code'><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
-<span class='line-number'>4</span>
-</pre></td><td class='code'><pre><code class=''><span class='line'>openssl req -new -key server.key -out server.csr
-</span><span class='line'>openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
-</span><span class='line'>cp server.key server.key.pem
-</span><span class='line'>cp server.crt server.cert.pem</span></code></pre></td></tr></table></div></figure>
+</pre></td><td class='code'><pre><code class=''><span class='line'>openssl genrsa -out server.key 2048
+</span><span class='line'>openssl req -new -x509 -key server.key -out server.cert.pem -days 1826
+</span><span class='line'>cp server.key server.key.pem</span></code></pre></td></tr></table></div></figure>
 
 
 <p>to generate the certificate and key needed for the SSL connection.</p>
