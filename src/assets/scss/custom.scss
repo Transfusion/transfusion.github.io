@@ -1,0 +1,24 @@
+.card-project-img {
+	overflow: hidden; 
+	height: 200px;
+}
+
+.card-project-title {
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, sans-serif;
+	font-size: $global-font-size * 1.25;
+	text-align: center;
+}
+
+.card-project-desc {
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-bottom: 0.5em;
+}
+
+.card-container {
+	max-width: 70%;
+}
+
+.callout-body, .callout-footer {
+	font-size: 0.95rem;
+}

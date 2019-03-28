@@ -1,0 +1,101 @@
+---
+projects: [{title: ExPo2,
+            description: A stock exchange simulator allowing humans and bots to trade together; a rewrite of <a target="_blank" href="https://www.cs.bris.ac.uk/~cszjpc/expo.html">Exchange Portal</a> in Java. I extended the system with ØMQ and exposed an API for bot developers to enable simulations of high frequency trading.,
+
+            extended_desc: "ExPo2 in the state it was presented to me used the WebSocket protocol for order entry and market data for both the web trading interface and the bots. I developed a benchmarking harness to obtain latency figures at various load levels, added a protobuf representation of the messaging protocol since ØMQ supports binary messages, and added an endpoint where compiled bots could be uploaded and run inside the exchange, thus eliminating any latency. A load test using Apache JMeter was finally performed with up to 60 simultaneous threads.",
+            href: "http://scotek.org/#research",
+            img_url: "/assets/img/expo2_card.png"},
+
+            {title: InstaSketch,
+            description: "A sketch-based image retrieval Android app with a local mode meant to return closest matches in the user's photo album and a remote backend mode in Python, incorporating both color and spatial features.",
+            extended_desc: "Proof of concept that self-contained mobile CBIR systems are viable. I evaluated various color features such as color coherence vectors, <a href='http://www.cs.nott.ac.uk/~pszqiu/webpages/Papers/PR-D-06-00253.pdf' target='_blank'>tree-based methods</a>, and color histograms, spatial features such as perceptual hashes, <a href='https://grail.cs.washington.edu/projects/query/mrquery.pdf'>wavelet-based methods</a>, and other descriptors invariant to various minor distortions such as SIFT/SURF applied to a bag of words model to find the relative frequency of keypoints against the corpus of images. Various distance measures and preprocessing strategies were compared for feature vectors of the same type. Unfortunately, only color histograms were implemented in the local mode due to time constraints, and the success of spatial features severely limited by the degree of precision of the touch input and the user's image in mind.",
+            href: "http://github.com/InstaSketch",
+            img_url: "/assets/img/instasketch_card.jpg"},
+
+            {title: PlainShare,
+            description: "A node.js chatroom/file sharing application with persistence so users can see files and messages from before they joined. Uses socket.io for the realtime chatbox; backed by Redis for the chatbox/session management and message log.",
+            extended_desc: "The original plan was to use <a href='http://peerjs.com' target='_blank'>peer.js</a> and <a href='http://skyway.io' target='_blank'>skyway</a> to broker direct peer to peer connections whenever possible for efficiency; caching files server-side was first implemented because one-to-many file transfer and NAT traversal were the biggest issues.",
+
+            href: "http://github.com/Transfusion/plainshare",
+            img_url: "/assets/img/plainshare_card.png"},
+
+            {title: GeoGame,
+            description: "A sample location-based game utilizing all four Android components. Notifications are sent and new tasks generated whenever the user reaches the task's generated location.",
+            extended_desc: "A ContentProvider wrapping an associated SQLiteOpenHelper stores the player's trail and a LocalBroadcastReceiver sends location updates from the LocationManager to the Activity.",
+            href: "https://github.com/Transfusion/AE3MDP_GeoGame",
+            img_url: "/assets/img/geogame_card.jpg"},
+
+            {title: SketchAndGuess,
+            description: "A color-layout based image retrieval system which segmented images in the database and computed the median color for each segment in various color spaces such as HSV, RGB, and Lab, and constructed a tree for each segment, thus forming a random forest. I contributed to the development of a naïve bayesian approach which predicted the most probable color of the unfilled regions in the specified layout, based on any filled surrounding regions.",
+            extended_desc: "The system was a Java backend for an Android app; I added a Swing GUI for visualization and an SQLite database to store the image descriptors as blobs, a large speed improvement over the previous plaintext storage. I also parallelized the feature extraction process, both at the individual image level and on the separate segments of the image to achieve a speedup almost linear to the number of cores in the machine.",
+            href: "http://iip.whu.edu.cn/emsa2017/schedule.html",
+            img_url: "/assets/img/sketchandguess_card.png"},
+
+            {title: HackerRank,
+            description: "Come see how I think algorithmically; also my training ground to get me up to speed on new languages.",
+            href: "http://github.com/Transfusion/plainshare",
+            img_url: "/assets/img/hackerrank_card.png"}]
+---
+
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="assets/css/app.css">
+  </head>
+  <body>
+    <div class="row" style="max-width: 70%">
+      {{>topbar-responsive}}
+      <div class="large-3 columns">
+        <div style="min-height: 100%; min-width: 100%; text-align: center; padding-bottom: 1em">
+          <img src="https://dummyimage.com/300x200/000/ffffff&text=Portrait+Placeholder"></img>
+        </div>
+      </div>
+
+      <div class="large-9 columns">
+        <p>
+          I'm most proficient in Java because its the language I learned data structures in, and because I love Android development (although Kotlin is the new kid on the block...) I have a soft spot for the expressiveness of languages with functional features; map, reduce, fold, and lambdas are indispensable to me. However, give me any codebase in any language and I'll grok it without trouble; I love seeing optimized code anywhere, from well thought-out <code>numpy</code> code that minimizes loops to C networking code, even though I don't consider myself to be interview-ready in those languages.
+        <p>
+          I've been interested in neural nets since I realized I was barking up the wrong tree by applying bag of words to SIFT descriptors when developing a <i>sketch-based</i> image retrieval system.
+        </p>
+        <p>
+          I'm an open source aficionado; have contributed a few patches, mostly to Android projects, including Firefox for Android. Always looking to get more involved.
+        </p>
+      </div>
+      <hr>
+    </div>
+    <div class="row small-up-1 medium-up-2 large-up-3 card-container">
+      {{#each projects}}
+      <div class="column column-body">
+        <div target="_blank" href="{{this.href}}" style="display: block;" class="card">
+          <div class="card-section">
+            <div class="card-project-img" >
+              <img style="width:100%;" src={{this.img_url}}></img>
+            </div>
+          </div>
+          <div class="card-project-title card-section">
+            <a target="_blank" href="{{this.href}}">{{this.title}}</a>
+          </div>
+          <div class="card-project-desc card-section">
+            <div class="callout callout-hover-reveal" data-callout-hover-reveal>
+              <div class="callout-body">
+                {{{this.description}}}
+              </div>
+              {{#if extended_desc}}
+              <div class="callout-footer" style="display: none;">
+                <hr>
+                {{{this.extended_desc}}}
+              </div>
+              {{/if}}
+            </div>
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </div>
+
+  </body>
+</html>
